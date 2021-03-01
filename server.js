@@ -10,7 +10,7 @@ app.use(express.urlencoded({extended: false}));
 app.put('/cars/:id', async(req, res, next)=>{
     try{
         console.log(req.body);
-        await Car.update({color:req.body.carId},{
+        await Car.update({color:req.body.carI},{
             where:{id:req.params.id}
         });
         res.redirect('/')
