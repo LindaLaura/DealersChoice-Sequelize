@@ -4,11 +4,11 @@ const conn = new Sequelize(process.env.DATABASE_URL || 'postgres://localhost/dea
 
 
 const Car = conn.define('car', {
-    id:{
-        type: UUID,
-        primaryKey: true,
-        defaultValue: UUIDV4
-    },
+    // id:{
+    //     type: UUID,
+    //     primaryKey: true,
+    //     defaultValue: UUIDV4
+    // },
     model:{
         type: STRING,
         allowNull: false, 
@@ -24,11 +24,11 @@ const Car = conn.define('car', {
 });
 
 const Maker = conn.define('maker', {
-    id:{
-        type: UUID,
-        primaryKey: true,
-        defaultValue: UUIDV4
-    },
+    // id:{
+    //     type: UUID,
+    //     primaryKey: true,
+    //     defaultValue: UUIDV4
+    // },
     name:{
         type: STRING,
         allowNull: false,
